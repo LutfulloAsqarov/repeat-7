@@ -9,6 +9,7 @@ body {
   text-decoration: none;
   list-style-type: none;
   font-family: Montserrat;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -237,7 +238,7 @@ body {
   }
 }
 #hero {
-  padding-top: 100px;
+  padding: 100px 0 80px;
 }
 
 .hero {
@@ -342,7 +343,7 @@ body {
 }
 
 #about {
-  padding: 250px 0 200px;
+  padding: 80px 0;
 }
 
 .about {
@@ -440,7 +441,7 @@ body {
   }
 }
 #value {
-  padding-bottom: 150px;
+  padding: 80px 0;
 }
 
 .value__top {
@@ -548,6 +549,10 @@ body {
     flex-direction: column;
   }
 }
+#product {
+  padding: 80px 0;
+}
+
 .product__left {
   position: relative;
 }
