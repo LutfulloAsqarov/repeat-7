@@ -1,0 +1,72 @@
+body {
+    background-color: $secondaryColor;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Montserrat;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.df {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    bottom: 20px;
+    right: 20px;
+    background: $backgroundColor;
+    border-radius: 50%;
+    color: $secondaryColor;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.show__back-top {
+    display: flex;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 2px;
+    background-color: $secondPrimaryColor;
+    padding: 25px 55px;
+    transition: .4s;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 100px;
+}

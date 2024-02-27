@@ -1,0 +1,112 @@
+#hero {
+    padding-top: 100px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 89px;
+
+    &__left {
+        width: 60%;
+
+        &__subtitle {
+            font-weight: 700;
+            font-size: 20px;
+            color: $secondPrimaryColor;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 55px;
+            color: $primaryColor;
+            padding-top: 67px;
+            padding-bottom: 47px;
+        }
+        &__btns {
+            display: flex;
+            gap: 67px;
+            &__disc {
+                color: #fff;
+                border: 2px solid #F7515C;
+                &:hover {
+                    background-color: #fff;
+                    color: #F7515C;
+                }
+            }
+
+            &__video {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                color: $primaryColor;
+                padding: 0 10px;
+                background-color: transparent;
+                i {
+                    padding: 18px 20px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    color: $primaryColor;
+                }
+                &:hover {
+                    background-color: $secondPrimaryColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__right {
+        width: 40%;
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width:1130px) {
+        .hero__left__subtitle {
+            font-size: 16px;
+        }
+        .hero__left__title {
+            font-size: 40px;
+            padding-top: 47px;
+            padding-bottom: 27px;
+        }
+
+        &__left__btns {
+            gap: 40px;
+        }
+
+        &__left__btns__disc,
+        &__left__btns__video {
+            font-size: 16px;
+            padding: 6px 20px;
+        }
+
+        &__left__btns__video {
+            gap: 12px;
+            i {
+                padding: 10px 14px;
+            }
+        }
+    }
+
+    @media (max-width:850px) {
+        flex-direction: column;
+        &__right {
+            width: 70%;
+        }
+        &__left {
+            width: 100%;
+        }
+    }
+    @media (max-width:450px) {
+        &__left__btns {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
+}

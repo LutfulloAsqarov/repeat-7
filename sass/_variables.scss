@@ -1,0 +1,12 @@
+$primaryColor: #282A30;
+$secondaryColor: #f5f5f5;
+$backgroundColor: blue;
+$hoverColor: skyblue;
+$darkModeColor: black;
+$secondPrimaryColor: #F7515C;
+
+.dark {
+    $primaryColor: white;
+    $secondaryColor: black ;
+    $darkModeColor: yellow ;
+}

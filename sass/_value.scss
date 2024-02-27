@@ -1,0 +1,115 @@
+#value {
+    padding-bottom: 150px;
+}
+
+.value__top {
+    padding-bottom: 87px;
+    &__subtitle{
+        font-weight: 600;
+        font-size: 40px;
+    }
+}
+
+.value__bottom {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &__card {
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        gap: 22px;
+        padding: 44px;
+        max-width: 500px;
+        box-shadow: 0 0 5px 1px gray;
+        z-index: 10;
+        background-color: #fff;
+
+        &__num {
+            padding: 14px 20px;
+            color: $secondPrimaryColor;
+            background-color: #edd6d8;
+            border-radius: 50%;
+        }
+        &__info {
+            &__title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+            }
+            &__desc {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #464749;
+                padding-top: 14px;
+                max-width: 230px;
+            }
+        }
+    }
+    &__card--1{
+        top: 90px;
+        left: -120px;
+    }
+    &__card--2{
+        top: -51px;
+        right: 41px;
+    }
+    &__card--3{
+        right: -89px;
+        bottom: -64px;
+    }
+}
+
+@media(max-width:900px) {
+    .value__top__subtitle {
+        font-size: 40px;
+    }
+    .value__top__title {
+        font-size: 70px;
+    }
+    .value__bottom {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        &__card {
+            position: static;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width:700px) {
+    .value__top__subtitle {
+        font-size: 20px;
+    }
+    .value__top__title {
+        font-size: 50px;
+    }
+    .value__bottom {
+        max-width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+}
+@media(max-width:450px) {
+    .value__top {
+        padding-bottom: 50px;
+    }
+    .value__top__subtitle {
+        font-size: 18px;
+    }
+    .value__top__title {
+        font-size: 30px;
+    }
+    .value__bottom__card {
+        flex-direction: column;
+    }
+
+}
